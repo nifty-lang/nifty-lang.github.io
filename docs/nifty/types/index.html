@@ -13,14 +13,19 @@
 <link rel="mask-icon" href='https://example.com/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://example.com/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://example.com/favicons/browserconfig.xml'>
-<title>About | Nifty</title><meta property="og:title" content="About" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.com/" />
-<meta itemprop="name" content="About">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content=""/>
+<title>Types | Nifty</title><meta property="og:title" content="Types" />
+<meta property="og:description" content="Basic Types 1char // same as u32 defaults to &#39;\0&#39; 2int // same as s32 defaults to 0 3uint // same as u32 defaults to 0 4float // same as f32 defaults to 0.f 5double // same as f64 defaults to 0.d 6 7uintptr // defaults to 0 8 9// defaults to false 10bool b8 b16 b32 b64 11 12// defaults to 0 13u8 u16 u32 u64 u128 14s8 s16 s32 s64 s128 15 16//defaults to 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/docs/nifty/types/" /><meta property="article:section" content="docs" />
+
+
+<meta itemprop="name" content="Types">
+<meta itemprop="description" content="Basic Types 1char // same as u32 defaults to &#39;\0&#39; 2int // same as s32 defaults to 0 3uint // same as u32 defaults to 0 4float // same as f32 defaults to 0.f 5double // same as f64 defaults to 0.d 6 7uintptr // defaults to 0 8 9// defaults to false 10bool b8 b16 b32 b64 11 12// defaults to 0 13u8 u16 u32 u64 u128 14s8 s16 s32 s64 s128 15 16//defaults to 0.">
+
+<meta itemprop="wordCount" content="158">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Types"/>
+<meta name="twitter:description" content="Basic Types 1char // same as u32 defaults to &#39;\0&#39; 2int // same as s32 defaults to 0 3uint // same as u32 defaults to 0 4float // same as f32 defaults to 0.f 5double // same as f64 defaults to 0.d 6 7uintptr // defaults to 0 8 9// defaults to false 10bool b8 b16 b32 b64 11 12// defaults to 0 13u8 u16 u32 u64 u128 14s8 s16 s32 s64 s128 15 16//defaults to 0."/>
 
 
 <link rel="stylesheet" href="https://example.com/css/styles.b0e5aa331e09e690267910a09cd367e53fbb61672fc0c6f4b325942700a7861eb05de886c6425b0c8b4da010516e024ae24aa2cbf71bbda09e4ef76af1a87ad6.css" integrity="sha512-sOWqMx4J5pAmeRCgnNNn5T&#43;7YWcvwMb0syWUJwCnhh6wXeiGxkJbDItNoBBRbgJK4kqiy/cbvaCeTvdq8ah61g==">
@@ -28,9 +33,11 @@
 
 
 
+  <meta name="description" content="Basic Types 1char // same as u32 defaults to &amp;#39;\0&amp;#39; 2int // same as s32 defaults to 0 3uint // same as u32 defaults to 0 4float // same as f32 defaults to 0.f 5double // same as f64 defaults to 0.d 6 7uintptr // defaults to 0 8 9// defaults to false 10bool b8 b16 b32 b64 11 12// defaults to 0 13u8 u16 u32 u64 u128 14s8 s16 s32 s64 s128 15 16//defaults to 0.">
+
 
 </head>
-<body class="page-home" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href='https://example.com/' class="nav_brand">
@@ -53,9 +60,8 @@
   </label>
   
   
-    
   
-  <input type="search" class="search_field  standardize-input" placeholder="Search site" id="find" autocomplete="off"  data-scope=''>
+  <input type="search" class="search_field  standardize-input" placeholder="Search docs" id="find" autocomplete="off"  data-scope='docs'>
   <div class="search_results results"></div>
 </div>
 
@@ -99,33 +105,89 @@
     
     
       
-        
-      
+    <div class="grid-auto"><aside class="aside menu">
+  <div>
+    <label class="aside_toggle toggle" title='Docs Menu' role="button">Docs Menu <svg class="icon icon_carly">
+  <use xlink:href="#carly"></use>
+</svg></label>
+  </div>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://example.com/docs/" class="group">Nifty</a></h2>
+      <section class="" id="docs-nifty">
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://example.com/docs/nifty/" class="group">Getting Started</a></h2>
+      <section class="" id="docs-getting-started">
+        <h3 class="section_link"><a id="docs-variables" href="https://example.com/docs/nifty/variables/">Variables</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables">Variables</a></li>
+    <li><a href="#runtime-constants">Runtime Constants</a></li>
+    <li><a href="#compiletime-constants">Compiletime Constants</a></li>
+    <li><a href="#unused">Unused</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link active"><a id="docs-types" href="https://example.com/docs/nifty/types/">Types</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-types">Basic Types</a></li>
+    <li><a href="#type-aliases">Type Aliases</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+      </section>
+  </section>
+</aside>
+
+  <main class="content">
+    <h1>Types</h1><h2 id="basic-types">Basic Types</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kt">char</span><span class="w"> </span><span class="c1">// same as u32 defaults to &#39;\0&#39;
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1"></span><span class="n">int</span><span class="w"> </span><span class="c1">// same as s32 defaults to 0
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c1"></span><span class="n">uint</span><span class="w"> </span><span class="c1">// same as u32 defaults to 0
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="c1"></span><span class="n">float</span><span class="w"> </span><span class="c1">// same as f32 defaults to 0.f
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c1"></span><span class="n">double</span><span class="w"> </span><span class="c1">// same as f64 defaults to 0.d
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w"></span><span class="n">uintptr</span><span class="w"> </span><span class="c1">// defaults to 0
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w"></span><span class="c1">// defaults to false
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="c1"></span><span class="kt">bool</span><span class="w"> </span><span class="n">b8</span><span class="w"> </span><span class="n">b16</span><span class="w"> </span><span class="n">b32</span><span class="w"> </span><span class="n">b64</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w"></span><span class="c1">// defaults to 0
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="c1"></span><span class="kt">u8</span><span class="w"> </span><span class="kt">u16</span><span class="w"> </span><span class="kt">u32</span><span class="w"> </span><span class="kt">u64</span><span class="w"> </span><span class="kt">u128</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w"></span><span class="n">s8</span><span class="w"> </span><span class="n">s16</span><span class="w"> </span><span class="n">s32</span><span class="w"> </span><span class="n">s64</span><span class="w"> </span><span class="n">s128</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w"></span><span class="c1">//defaults to 0.0
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="c1"></span><span class="n">f16</span><span class="w"> </span><span class="kt">f32</span><span class="w"> </span><span class="kt">f64</span><span class="w"> </span><span class="n">f128</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w"></span><span class="c1">//defaults to &#34;&#34;
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="c1"></span><span class="n">string</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w"></span><span class="c1">// defaults to &#34;\0&#34;
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="c1"></span><span class="n">cstring</span><span class="w"> </span><span class="c1">// Null terminated string. Meant for interfacing with c libraries.
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w"></span><span class="n">typeid</span><span class="w"> </span><span class="c1">// runtime identifier for a type.
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="w"></span><span class="n">rawptr</span><span class="w"> </span><span class="c1">// Like void* in c, used for compatibility with existing c code.
+</span></span></span></code></pre></div><h2 id="type-aliases">Type Aliases</h2>
+<p>Type aliases can be created with the <code>type ... as</code> pattern.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">type</span> <span class="nx">Month</span> <span class="nx">as</span> <span class="kt">int</span>
+</span></span></code></pre></div><p>To force a type alias to be distinct, use the distinct attribute.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="err">#</span><span class="p">[</span><span class="nx">distinct</span><span class="p">]</span> <span class="kd">type</span> <span class="nx">Month</span> <span class="nx">as</span> <span class="kt">int</span>
+</span></span></code></pre></div>
+    <div class="pager">
+  
     
-      <div class="content">
-<div class="content">
-  <section class="grid-2"  >
-<div><h1 id="nifty-programming-language">Nifty Programming Language</h1>
-<p>Nifty is a new systems programming language in development.
-Nifty aims to be simple, efficient, and enjoyable to use.</p>
-<p><img src="/images/court_orders.JPG" alt="new_lang"></p>
-<p>Nifty strives for adequacy and will settle for nothing less (eventually).</p>
-<div class="tip">
-  <p>Nifty tip</p>
-<p>Use <code>nifty help</code> for help!</p>
+    <div class="pager_item prev">
+      <a href="https://example.com/docs/nifty/variables/" class="pager_link button" title="Variables" rel="prev">
+        <span class="pager_label">Variables</span>
+      </a>
+    </div>
+    
+  
+
+  
 </div>
-<p><a href="docs/nifty/" class="button">Getting Started</a><a href="https://github.com/ATSOTECK/nifty/releases" class="button">Download Nifty</a></p>
+  </main>
 </div>
-
-
-<div><img src="/images/hullo.svg" alt="hullo">
-<img src="/images/calc_pi.svg" alt="pi"></div>
-
-</section>
-
-
 </div>
-      </div></div>
   
 <footer class="pt-2 pb-2">
   <div class="wrap">

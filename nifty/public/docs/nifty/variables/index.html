@@ -13,14 +13,31 @@
 <link rel="mask-icon" href='https://example.com/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://example.com/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://example.com/favicons/browserconfig.xml'>
-<title>About | Nifty</title><meta property="og:title" content="About" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.com/" />
-<meta itemprop="name" content="About">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content=""/>
+<title>Variables | Nifty</title><meta property="og:title" content="Variables" />
+<meta property="og:description" content="Variables in nifty work a little bit differently than in other languages.
+Variables Variables are declared with the let keyword.
+1let x: int = 12 The types can be inferred.
+1let x = 12 // x is an int. 2let y = someFunc() The variable declaration operator can be used as well.
+1a := 12 // x is an int. 2b := 12.f // b is a float/f32. 3c := 12." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/docs/nifty/variables/" /><meta property="article:section" content="docs" />
+
+
+<meta itemprop="name" content="Variables">
+<meta itemprop="description" content="Variables in nifty work a little bit differently than in other languages.
+Variables Variables are declared with the let keyword.
+1let x: int = 12 The types can be inferred.
+1let x = 12 // x is an int. 2let y = someFunc() The variable declaration operator can be used as well.
+1a := 12 // x is an int. 2b := 12.f // b is a float/f32. 3c := 12.">
+
+<meta itemprop="wordCount" content="410">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Variables"/>
+<meta name="twitter:description" content="Variables in nifty work a little bit differently than in other languages.
+Variables Variables are declared with the let keyword.
+1let x: int = 12 The types can be inferred.
+1let x = 12 // x is an int. 2let y = someFunc() The variable declaration operator can be used as well.
+1a := 12 // x is an int. 2b := 12.f // b is a float/f32. 3c := 12."/>
 
 
 <link rel="stylesheet" href="https://example.com/css/styles.b0e5aa331e09e690267910a09cd367e53fbb61672fc0c6f4b325942700a7861eb05de886c6425b0c8b4da010516e024ae24aa2cbf71bbda09e4ef76af1a87ad6.css" integrity="sha512-sOWqMx4J5pAmeRCgnNNn5T&#43;7YWcvwMb0syWUJwCnhh6wXeiGxkJbDItNoBBRbgJK4kqiy/cbvaCeTvdq8ah61g==">
@@ -28,9 +45,15 @@
 
 
 
+  <meta name="description" content="Variables in nifty work a little bit differently than in other languages.
+Variables Variables are declared with the let keyword.
+1let x: int = 12 The types can be inferred.
+1let x = 12 // x is an int. 2let y = someFunc() The variable declaration operator can be used as well.
+1a := 12 // x is an int. 2b := 12.f // b is a float/f32. 3c := 12.">
+
 
 </head>
-<body class="page-home" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href='https://example.com/' class="nav_brand">
@@ -53,9 +76,8 @@
   </label>
   
   
-    
   
-  <input type="search" class="search_field  standardize-input" placeholder="Search site" id="find" autocomplete="off"  data-scope=''>
+  <input type="search" class="search_field  standardize-input" placeholder="Search docs" id="find" autocomplete="off"  data-scope='docs'>
   <div class="search_results results"></div>
 </div>
 
@@ -99,33 +121,118 @@
     
     
       
-        
-      
+    <div class="grid-auto"><aside class="aside menu">
+  <div>
+    <label class="aside_toggle toggle" title='Docs Menu' role="button">Docs Menu <svg class="icon icon_carly">
+  <use xlink:href="#carly"></use>
+</svg></label>
+  </div>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://example.com/docs/" class="group">Nifty</a></h2>
+      <section class="" id="docs-nifty">
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://example.com/docs/nifty/" class="group">Getting Started</a></h2>
+      <section class="" id="docs-getting-started">
+        <h3 class="section_link active"><a id="docs-variables" href="https://example.com/docs/nifty/variables/">Variables</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables">Variables</a></li>
+    <li><a href="#runtime-constants">Runtime Constants</a></li>
+    <li><a href="#compiletime-constants">Compiletime Constants</a></li>
+    <li><a href="#unused">Unused</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-types" href="https://example.com/docs/nifty/types/">Types</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-types">Basic Types</a></li>
+    <li><a href="#type-aliases">Type Aliases</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+      </section>
+  </section>
+</aside>
+
+  <main class="content">
+    <h1>Variables</h1><p>Variables in nifty work a little bit differently than in other languages.</p>
+<h2 id="variables">Variables</h2>
+<p>Variables are declared with the <code>let</code> keyword.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span>: <span class="nc">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="w">
+</span></span></span></code></pre></div><p>The types can be inferred.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="w"> </span><span class="c1">// x is an int.
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="kd">let</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">someFunc</span><span class="p">()</span><span class="w">
+</span></span></span></code></pre></div><p>The variable declaration operator can be used as well.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">a</span> <span class="o">:=</span> <span class="mi">12</span>   <span class="c1">// x is an int.
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="nx">b</span> <span class="o">:=</span> <span class="mf">12.</span><span class="nx">f</span> <span class="c1">// b is a float/f32.
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"></span><span class="nx">c</span> <span class="o">:=</span> <span class="mf">12.0</span> <span class="c1">// c is a float/f32.
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"></span><span class="nx">d</span> <span class="o">:=</span> <span class="mf">12.</span><span class="nx">d</span> <span class="c1">// d is a double/f64.
+</span></span></span></code></pre></div><p>By default variables in nifty are initialized to their zero value.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span>: <span class="nc">int</span><span class="w"> </span><span class="c1">// x is 0.
+</span></span></span></code></pre></div><p>Variables can be explicitly be uninitialized with the <code>undefined</code> keyword or with <code>#noAutoInit</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">a</span>: <span class="nc">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">undefined</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span>#<span class="n">noAutoInit</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">x</span>: <span class="nc">int</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">y</span>: <span class="nc">float</span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">z</span>: <span class="nc">string</span><span class="w">
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w"></span><span class="n">b</span><span class="w"> </span>:<span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="c1">// Valid, but undefined behavior.
+</span></span></span></code></pre></div><p>Undefined can only be used for declaration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">undefined</span><span class="w"> </span><span class="c1">// Invalid!
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">undefined</span><span class="p">)</span><span class="w"> </span><span class="c1">// Invalid!
+</span></span></span></code></pre></div><p>Nifty does not support variable shadowing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span>: <span class="nc">int</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">x</span>: <span class="nc">float</span><span class="w"> </span><span class="c1">// Invalid!
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="runtime-constants">Runtime Constants</h2>
+<p>Runtime constants are declared with the 'val' keyword.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">val</span> <span class="py">x</span><span class="p">:</span> <span class="n">int</span> <span class="p">=</span> <span class="m">12</span>
+</span></span></code></pre></div><p>Type infence can be used as well.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">val</span> <span class="py">x</span> <span class="p">=</span> <span class="m">12</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="k">val</span> <span class="py">y</span> <span class="p">=</span> <span class="n">someFunc</span><span class="p">()</span>
+</span></span></code></pre></div><p>The constant declaration operator can be used as well.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">x</span><span class="w"> </span>::<span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="n">y</span><span class="w"> </span>::<span class="o">=</span><span class="w"> </span><span class="n">someFunc</span><span class="p">()</span><span class="w">
+</span></span></span></code></pre></div><p>The <code>undefined</code> keyword can't be used with constants. Constants do not have zero values and their values must be specified.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">val</span> <span class="py">x</span><span class="p">:</span> <span class="n">int</span> <span class="p">=</span> <span class="n">undefined</span> <span class="c1">// Invalid!
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="k">val</span> <span class="py">y</span><span class="p">:</span> <span class="n">int</span> <span class="c1">// Invalid!
+</span></span></span></code></pre></div><h2 id="compiletime-constants">Compiletime Constants</h2>
+<p>Compiletime constants are declared with the <code>const</code> keyword and their value must be known at compiletime. Type inference works with compiletime consts and the constant declaration operator can be used with compiletime consts. The compiler will decide if something is a runtime or compiletime const so the same operator can be used.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">const</span><span class="w"> </span><span class="n">x</span>: <span class="nc">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="k">const</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">someFunc</span><span class="p">()</span><span class="w"> </span><span class="c1">// Invalid!
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"></span><span class="k">const</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w"></span><span class="k">const</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>#<span class="no">SOME_MACRO_CONST</span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="n">b</span><span class="w"> </span>::<span class="o">=</span><span class="w"> </span><span class="mi">19</span><span class="w">
+</span></span></span></code></pre></div><h2 id="unused">Unused</h2>
+<p>If a function returns two or more variables and you don't care about all of them you can use <code>unused</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">x</span><span class="p">,</span> <span class="nx">unused</span> <span class="o">:=</span> <span class="nf">someFunc</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nx">unused</span><span class="p">,</span> <span class="nx">y</span> <span class="o">:=</span> <span class="nf">someFunc</span><span class="p">()</span>
+</span></span></code></pre></div><p>If a function is marked with <code>#[useReturn]</code> then <code>unused</code> can be used to ignore the result.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">unused</span> <span class="o">:=</span> <span class="nf">useReturnFunc</span><span class="p">()</span>
+</span></span></code></pre></div><p><code>unused</code> can't be a constant.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">unused</span><span class="w"> </span>::<span class="o">=</span><span class="w"> </span><span class="n">someFunc</span><span class="p">()</span><span class="w"> </span><span class="c1">// Invalid!
+</span></span></span></code></pre></div><p><code>unused</code> is not a real variable.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">x</span> <span class="o">:=</span> <span class="nx">unused</span> <span class="c1">// Invalid!
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="nx">fmt</span><span class="p">::</span><span class="nb">println</span><span class="p">(</span><span class="nx">unused</span><span class="p">)</span> <span class="c1">// Invalid!
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"></span><span class="nf">type_of</span><span class="p">(</span><span class="nx">unused</span><span class="p">)</span> <span class="c1">// Invalid!
+</span></span></span></code></pre></div>
+    <div class="pager pager_lean">
+  
+
+  
     
-      <div class="content">
-<div class="content">
-  <section class="grid-2"  >
-<div><h1 id="nifty-programming-language">Nifty Programming Language</h1>
-<p>Nifty is a new systems programming language in development.
-Nifty aims to be simple, efficient, and enjoyable to use.</p>
-<p><img src="/images/court_orders.JPG" alt="new_lang"></p>
-<p>Nifty strives for adequacy and will settle for nothing less (eventually).</p>
-<div class="tip">
-  <p>Nifty tip</p>
-<p>Use <code>nifty help</code> for help!</p>
+    <div class="pager_item next">
+      <a href="https://example.com/docs/nifty/types/" class="pager_link button" title="Types" rel="next">
+        <span class="pager_label">Types</span>
+      </a>
+    </div>
+    
+  
 </div>
-<p><a href="docs/nifty/" class="button">Getting Started</a><a href="https://github.com/ATSOTECK/nifty/releases" class="button">Download Nifty</a></p>
+  </main>
 </div>
-
-
-<div><img src="/images/hullo.svg" alt="hullo">
-<img src="/images/calc_pi.svg" alt="pi"></div>
-
-</section>
-
-
 </div>
-      </div></div>
   
 <footer class="pt-2 pb-2">
   <div class="wrap">

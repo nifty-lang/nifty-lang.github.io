@@ -1,0 +1,20 @@
+#  menu items
+[[main]]
+  name = "Getting Started"
+  weight = 1
+  url = "tutorials/"
+
+[[main]]
+  name = "Overview"
+  weight = 2
+  url = "docs/"
+
+[[main]]
+  name = "Examples"
+  weight = 3
+  url = "examples/"
+  
+  [[main]]
+  name = "Showcase"
+  weight = 4
+  url = "showcase/"
