@@ -9,7 +9,7 @@ Nifty is a simple and easy language to get started with. Let's go!
 
 Download nifty for your platform [here](https://github.com/ATSOTECK/nifty/releases).
 
-If you want to build and install nifty yourself see the README in the repo for instructions.
+If you want to build and install nifty yourself see the `README` in the repo for instructions.
 
 ## Syntax Highlighting
 
@@ -27,7 +27,7 @@ nifty new
 
 Nifty will generate a file called `build.toml` and a file called `hello.nifty` which should look like this:
 
-```rust
+```nifty
 package hello
 
 using <fmt>

@@ -5,7 +5,7 @@ weight: 3
 
 ## Basic Types
 
-```rust
+```nifty
 char // same as u32 defaults to '\0'
 int // same as s32 defaults to 0
 uint // same as u32 defaults to 0
@@ -39,12 +39,12 @@ rawptr // Like void* in c, used for compatibility with existing c code.
 
 Type aliases can be created with the `type ... as` pattern.
 
-```go
+```nifty
 type Month as int
 ```
 
 To force a type alias to be distinct, use the distinct attribute.
 
-```go
+```nifty
 #[distinct] type Month as int
 ```
