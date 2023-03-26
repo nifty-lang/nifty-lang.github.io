@@ -27,7 +27,7 @@ nifty new
 
 Nifty will generate a file called `build.toml` and a file called `hello.nifty` which should look like this:
 
-```nifty
+```rust
 package hello
 
 using <fmt>
