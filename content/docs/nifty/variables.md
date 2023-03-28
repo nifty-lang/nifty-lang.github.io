@@ -21,7 +21,7 @@ Nifty does not support variable shadowing.
 
 ## Runtime Constants
 
-Runtime constants are declared with the 'val' keyword.
+Runtime constants are declared with the `val` keyword.
 
 ![val](/images/val.svg)
 

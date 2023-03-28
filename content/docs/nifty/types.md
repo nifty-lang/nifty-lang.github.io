@@ -9,4 +9,4 @@ weight: 3
 
 ## Type Aliases
 
-![type_As](/images/type_as.svg)
+![type_as](/images/type_as.svg)
