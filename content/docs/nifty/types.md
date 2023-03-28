@@ -10,3 +10,11 @@ weight: 3
 ## Type Aliases
 
 ![type_as](/images/type_as.svg)
+
+## Casting
+
+![casting](/images/casting.svg)
+
+## Other
+
+![types_other](/images/types_other.svg)
