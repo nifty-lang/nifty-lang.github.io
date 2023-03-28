@@ -27,15 +27,7 @@ nifty new
 
 Nifty will generate a file called `build.toml` and a file called `hello.nifty` which should look like this:
 
-```rust
-package hello
-
-using <fmt>
-
-fn main() {
-    println("Hullo!")
-}
-```
+![hello_world](/images/hello_world.svg)
 
 To build and run the project use:
 
