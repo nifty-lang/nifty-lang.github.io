@@ -1,5 +1,5 @@
 ---
-title: "Control FLow"
+title: "Control Flow"
 weight: 5
 ---
 
