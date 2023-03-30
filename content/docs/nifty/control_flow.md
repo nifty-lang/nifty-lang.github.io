@@ -46,3 +46,13 @@ By default `goto` is disabled by the compiler. This can be enabled in `build.tom
 ## Labelled Blocks
 
 ![labelled_blocks](/images/labelled_blocks.svg)
+
+## Block Values
+
+Blocks are expressions and can be used to get values.
+
+Sometimes it's impracticle or not possible to initialize/set a variable in one line. Using blocks can prevent needing to set the variable to undefined or a temporary value.
+
+Blocks can be labbeled as well to return a value from a specified block if nested.
+
+![block_values](/images/block_values.svg)
