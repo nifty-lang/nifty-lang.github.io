@@ -2,7 +2,7 @@
 [[main]]
   name = "Getting Started"
   weight = 1
-  url = "tutorials/"
+  url = "docs/nifty/"
 
 [[main]]
   name = "Overview"
