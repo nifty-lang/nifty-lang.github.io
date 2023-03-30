@@ -55,3 +55,11 @@ If you just want to build the project use:
 ```sh
 nifty build hello
 ```
+
+## Comments
+
+Comments are sismilar to comments in other c-like languages. Nifty allows for nested comments.
+
+![comments](/images/comments.svg)
+
+Nifty style multiline comments require one less key press. I did say I'm lazy.
