@@ -37,7 +37,7 @@ nifty run hello
 
 This will build and then run the `hello` target in `build.toml`.
 
-Because hello is the default target in the project you can also run it with:
+Because `hello` is the default target in the project you can also run it with:
 
 ```sh
 nifty run

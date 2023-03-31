@@ -17,6 +17,7 @@ Nifty is a new systems programming language in development.
 Nifty aims to be simple, efficient, and enjoyable to use.
 
 ![new_lang](/images/court_orders.JPG)
+From [xkcd](https://xkcd.com/2309/).
 
 Nifty strives for adequacy and will settle for nothing less (eventually).
 

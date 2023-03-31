@@ -39,6 +39,8 @@ By default `goto` is disabled by the compiler. This can be enabled in `build.tom
 
 ![goto_xkcd](/images/goto.png)
 
+From [xkcd](https://xkcd.com/292/).
+
 ## Continue and Break
 
 ![continue_break](/images/continue_break.svg)
