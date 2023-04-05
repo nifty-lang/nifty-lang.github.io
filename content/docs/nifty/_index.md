@@ -65,3 +65,5 @@ Comments are sismilar to comments in other c-like languages. Nifty allows for ne
 ![comments](/images/comments.svg)
 
 Nifty style multiline comments require one less key press. I did say I'm lazy.
+
+{{< button "variables" "Next: Variables" >}}
