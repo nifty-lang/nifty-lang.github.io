@@ -1,11 +1,11 @@
 ---
 title: "Packages"
-weight: 10
+weight: 12
 ---
 
 ## Intro
 
-All nifty programs are made of packages.
+All nifty programs are made of packages. Packages are made of nifty files.
 
 The Nifty Standard Library (`nsl`) has many built-in packages.
 
@@ -14,6 +14,9 @@ The Nifty Standard Library (`nsl`) has many built-in packages.
 It is fine to just use the default package for your programs. By default the default package is empty. 
 Just using the default package could be an issue for larger programs though. 
 The default package can't be imported and can't be used for packages meant to be used as 3rd party packages.
+
+Packages must be within a folder of the same name, with the exception of the top-level package. For instance 
+if you have a `game` package all the files in the game package must be in the `game` folder.
 
 ## Use As
 

@@ -25,7 +25,9 @@ cd hello
 nifty new
 ```
 
-Nifty will generate a file called `build.toml` and a file called `hello.nifty` which should look like this:
+Follow the interactive project creation dialog.
+
+Nifty will generate a file called `build.toml` and a file called `hello.nifty` (or whatever you decided to call it) which should look like this:
 
 ![hello_world](/images/hello_world.svg)
 
